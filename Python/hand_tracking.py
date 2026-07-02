@@ -205,9 +205,12 @@ moving_circle = None
 pinch_start_time = 0
 initial_pinch_distance = 0
 initial_circle_radius = 0
-release_time = None
 scaling_mode = False
-GRACE_PERIOD = 0.5
+scale_origin = None
+tracking_mode = False
+starting_position = None
+throw_mode = False
+start_throw_time = 0.0
 throw_mode = False
 
 
@@ -236,7 +239,6 @@ while True:
                     starting_position = landmarks[0]
             else:
                 tracking_mode = False
-                first_tracking = False
             if tracking_mode:
                 current_position = landmarks[0]
                 delta = np.array([-3 * (current_position.x - starting_position.x), -3 * (current_position.y - starting_position.y), -3 * (current_position.z - starting_position.z)])
@@ -337,7 +339,6 @@ while True:
                         pinching = True
                         long_pinching = False
                         pinch_start_time = current_time
-                        release_time = None
                     else:
                         new_circle = {"x":mid_x, "y": mid_y, "radius": 40, "frozen": False, "quaternion": get_hand_quaternion(landmarks)}
                         circles.append(new_circle)
@@ -346,7 +347,6 @@ while True:
                         pinching = True
                         long_pinching = False
                         pinch_start_time = current_time
-                        release_time = None
             else:
                 if active_circle is not None:
                     if not long_pinching:
