@@ -1,0 +1,19 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+UserSettings/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.slnx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+Assets/_Recovery/
