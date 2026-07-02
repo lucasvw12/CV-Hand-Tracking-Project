@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/b3176fc5-dd5f-4e37-8aaa-d4360bdc8506
+
 # Real-Time Hand Tracking and 3D Interaction System
 
 A real-time computer vision project that uses MediaPipe and OpenCV to track hand movements from a webcam and enable intuitive 3D object manipulation in Unity. The system supports object movement, rotation, scaling, drawing, pinch-based interactions, and gesture recognition. Hand tracking data is transmitted over UDP, allowing the Unity scene to respond in real time with low-latency object manipulation and physics-based throwing.
