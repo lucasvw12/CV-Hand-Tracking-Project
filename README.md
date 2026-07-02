@@ -73,6 +73,8 @@ python Python/hand_tracking.py
 - Improved interaction mechanics and reduced latency
 - Cross-device networking where other devices can connect to mine for object control. 
 - Integration with VR/AR applications
+- Stronger forward and back rotation detection
+- Better gesture distinction to avoid potential overlapping or unwanted gesture detection. 
 
 ## Author
 
